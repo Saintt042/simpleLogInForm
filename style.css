@@ -8,3 +8,155 @@
     scroll-behavior: smooth;
     font-family: 'Milonga', cursive;
 }
+
+
+body{
+    
+    background: rgb(12, 8, 8);
+}
+.container{
+    margin: 0px auto;
+    max-width: 950px;
+    display: flex;
+}
+
+.imageArea{
+    position: relative;
+    background: url(./Images/bgimg.jpeg);
+    background-size: 100%;
+    color:#ccc;
+    width: 400px;
+    height: 663px;
+    margin: 0px auto;
+}
+.logo-content{
+    position: absolute;
+    width: 100%;
+    margin-top: 90px;
+    background: rgb(0, 0, 0, 0.3);
+    color: rgba(251, 252, 242, 0.5);
+    display: flex ;
+    justify-content: center;
+    padding: 10px;
+}
+.logo-content .logo-header{
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+.main-content{
+    background: rgb(252, 242, 242);
+    max-width: 575px;
+    height: 663px;
+}
+
+.info{
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family:'Segoe UI', sans-serif;
+    text-align:justify;
+}   
+
+h3{
+    margin-left: 25px;
+}
+
+h4{
+    color: red;
+}
+
+.signup-form{
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 25px;
+}
+
+form{
+    margin-top: -20px;
+}
+
+.signup-form .title{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.signup-form form .user-details{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box{
+    margin: 20px 0px 10px 0px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details{
+    display: block;
+    margin-bottom: 2px;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.user-details .input-box input{
+    width:100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+}
+
+form .button{
+    height: 40px;
+    margin: 15px 0px;   
+}
+
+form .button input{
+    height: 100%;
+    background: rgb(16, 61, 16);
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 0px 30px;
+    cursor: pointer;
+}
+
+form .button input:hover{
+    border: 1px solid rgb(16, 61, 16);
+}
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(16, 61, 16);
+    cursor: pointer;
+}
+a:hover{
+    color: green;
+}
+
+
+@media screen and (max-width: 768px){
+    .container{
+        display: block;
+    }
+
+    
+.imageArea{
+    
+    background-size: contain;
+    width: 350px;
+    height: 415px;
+}
+
+    
+.signup-form form .user-details{
+    display: flex;
+    flex-direction: column;
+}
+
+}
