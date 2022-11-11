@@ -23,7 +23,9 @@ body{
 .imageArea{
     position: relative;
     background: url(./Images/bgimg.jpeg);
-    background-size: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     color:#ccc;
     width: 400px;
     height: 663px;
